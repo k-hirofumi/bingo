@@ -15,18 +15,18 @@
 2.1で保持したデータを転置行列し、列データを行データに変換し保持する
 3.斜め列データを行データに変換し保持する
 　例．ビンゴ表が
-　　　aaa bbb ccc
-      ddd eee fff
-      ggg hhh iii
+　　　[[aaa,bbb,ccc]
+       [ddd,eee,fff]
+       [ggg,hhh,iii]]
     の場合、行データは
-      aaa bbb ccc
-      ddd eee fff
-      ggg hhh iii
-      aaa ddd ggg
-      bbb eee fff
-      ccc fff iii
-      aaa eee iii
-      ggg eee ccc
+      [aaa,bbb,ccc]
+      [ddd,eee,fff]
+      [ggg,hhh,iii]
+      [aaa,ddd,ggg]
+      [bbb,eee,fff]
+      [ccc,fff,iii]
+      [aaa,eee,iii]
+      [ggg,eee,ccc]
 
 4.あたり文字列でループし、1,2,3の行データをにあたり文字が含まれているか判定。含まれていた場合はその行のあたり数を１プラスする
 5.あたり数がビンゴサイズに達した行がある場合（ビンゴした場合）、その時点で"yes"を返す
